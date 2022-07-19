@@ -1,0 +1,10 @@
+
+{
+  "scripts": {
+      "watch:scss": "node-sass -w public/scss/login.scss public/css/login.css"
+    },
+
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

@@ -23,7 +23,7 @@ body{
 form{
     text-align: center;
     height: auto;
-    width: 500px;
+    width: auto;
     border: 10px solid;
     border-color: #020111;
     margin: 20px;
@@ -39,6 +39,7 @@ form{
     margin: 20px;
     padding: 20px;
     border-radius: 40px;
+    color: var(--blanco);
 }
 
 /*Sombreado al rededor del contenedor*/
@@ -48,7 +49,7 @@ form{
 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 background-color: var(--blanco);
 padding: 5rem;
-border-radius: 15rem;
+border-radius: 5rem;
 }
 /*Titulos*/
 h1{
@@ -189,6 +190,45 @@ h1, h2,h3{
 
 }
 
+.dangercom{
+    background-color: #ff0000;
+    border-radius: 20px;
+    padding: 4px;
+    width: auto;
+    margin: 40px 280px;
+    margin-top: 15px;
+
+}
+
+.infocom {
+    background-color: #FF512F;
+    border-radius: 20px;
+    padding: 4px;
+    width: auto;
+    margin: 40px 280px;
+    margin-top: 15px;
+}
+
+.infocomsus {
+    background-color: #4abe50;
+    border-radius: 20px;
+    padding: 4px;
+    width: auto;
+    margin: 40px 280px;
+    margin-top: 15px;
+}
+
+.borderimg{
+    border: 5px solid;
+    border-color: #020111;
+    border-right: 100px 100px;
+    border-left: 100px 100px;
+    border-width: 100px;
+    border
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
 select {
     width: 400px;
     text-align-last: center;

@@ -9,13 +9,13 @@ Grupo 2 : Mensaje generico de derechos reservados-->
             <div class="box">
                 <figure> <!-- conteniodo indeopendiente, logo que redirecciona -->
                     <a href="index.php">
-                    <img src="img/logoo.png" class="d-block w-150" alt="..." height="200">
+                    <img src="img/LogoExtranoE.png" class="d-block w-150" alt="..." height="200">
                     </a>
                 </figure>
             </div>
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>                
+                <p>Buscamos facilitar la personalizacion de poleras para el usuario comun y fomentar este mercado a niveles regionales, actualmente nos encontramos en pleno desarrollo, esperen con ancias nuevas actualizaciones :)</p>                
             </div>
             <div class="box">
                 <button type="button" hreg="#"> <img src="./img/facebook.png" height ="45" width="45" /></button>

@@ -32,34 +32,48 @@ include '../template/header.php';
    };
    ?>
 <link rel="stylesheet" href="/public/css/login.css">
+
 <main class="contenedor sombra">
+   <section>
+      <div>
+         <div class="form-container">
+            <form action="" method="post">
+
+               <h2 style="font-family: Impact; font-weight: bold; font-size: xx-large; color: whitesmoke;">Inciar sesion</h2>
+               <br>
+               <input type="email" name="email" required placeholder="Ingresa tu email" class="form-control-lg form-group" style="font-size: large; font-weight: bold;">
+               <br><br>
+               <input type="password" name="password" required placeholder="Ingresa tu contraseña" class="form-control-lg form-group" style="font-size: large; font-weight: bold;">
+               <br><br>
+               <input type="submit" name="submit" value="Iniciar Sesion" class="button-87" role="button" style="position: relative; margin: 0 auto; display:block">
+               <br><br>
+               <?php
+               if (isset($error)) {
+                  foreach ($error as $error) {
+                     echo '<span class="error-msg label-sus danger">Email o contraseña incorrecta.</span>';
+                  };
+               };
+               ?>
+            </form>
 
 
 
-   <div class="form-container">
-   <span>¿Tienes interes en convertirte en diseñador?</span>
-      <form action="" method="post">
-         
-         <h2 style="font-family: Impact; font-weight: bold; font-size: xx-large; color: whitesmoke;">Inciar sesion</h2>
-         <br>
-         <input type="email" name="email" required placeholder="Ingresa tu email" class="form-control-lg form-group" style="font-size: large; font-weight: bold;">
+         </div>
+      </div>
+
+   </section>
+   <br>
+   <section>
+      <div>
+         <h2 style="font-family: Impact; font-weight: bold; font-size: xx-large; color: orangered;">¿Tienes interes en convertirte en diseñador?</h2>
+         <span style="font-weight: bold;"> Contactanos a traves de nuestro CHAT ubicado en la esquina inferior derecha de la pagina.</span>
          <br><br>
-         <input type="password" name="password" required placeholder="Ingresa tu contraseña" class="form-control-lg form-group" style="font-size: large; font-weight: bold;">
-         <br><br>
-         <input type="submit" name="submit" value="Iniciar Sesion" class="button-87" role="button" style="position: relative; margin: 0 auto; display:block">
-         <br><br>
-         <?php
-         if (isset($error)) {
-            foreach ($error as $error) {
-               echo '<span class="error-msg label-sus danger">Email o contraseña incorrecta.</span>';
-            };
-         };
-         ?>
-         
-      </form>
-      
-   </div>
-   
+         <div class="borderimg">
+            <img src="/public/img/contacto.gif" alt="..." height="500" width="850">
+         </div>
+      </div>
+   </section>
+
 </main>
 
 <?php

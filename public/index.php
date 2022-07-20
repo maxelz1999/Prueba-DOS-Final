@@ -69,7 +69,7 @@
                 type:"POST",
                 data:"request=" + value,
                 beforeSend:function(){
-                    $(".container").html("<h3> Trabajando...</h3>");
+                    $(".container").html("<h3> Buscando tiendas y diseñadores...</h3>");
                 },
                 success:function(data){
                     $(".container").html(data);

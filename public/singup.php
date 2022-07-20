@@ -8,21 +8,20 @@
             include("../db/conexion.php");
 
             if(empty($_POST['nombre'] )){
-                echo "Completar todos los campos";        
+                echo "<h2 class='label-sus infocom' style='font-family: sans-serif; font-size: 35px; font-weight: bold;'>Completar todos los campos</h2>";        
             }else {
                 $nombre = $_POST['nombre'];
                 $imagen = addslashes(file_get_contents($_FILES['imagen']['tmp_name'])) ;
                 
                 $correo = $_POST['correo'];
-                $contrasena = $_POST['contrasena'];
                 $descripcion = $_POST['descripcion'];
                 $region = $_POST['region'];
-                $query="INSERT into disenadores (nombre, imagen, correo, contrasena , descripcion, region) VALUES ('$nombre','$imagen','$correo','$contrasena','$descripcion','$region')";
+                $query="INSERT into disenadores (nombre, imagen, correo, descripcion, region) VALUES ('$nombre','$imagen','$correo','$descripcion','$region')";
                 $resultado = $conn->query($query);
                 if($resultado){
-                    echo"se guardo el disenador";
+                    echo"<h2 class='label-sus infocomsus' style='font-family: sans-serif; font-size: 35px; font-weight: bold;'>Se guardo el disenador</h2>";
                 }else{
-                    echo "no se guardo error";
+                    echo "<h2 class='label-sus dangercom' style='font-family: sans-serif; font-size: 20px; font-weight: bold;'>No se guardo, error</h2>";
                 }
             }
         ?>
@@ -30,16 +29,16 @@
 <form method="POST" enctype="multipart/form-data" style="" class="formregistro">
 
 <label style="font-weight:bold; font-family: sans-serif; font-size: 20px;">Nombre</label>
-<input class="form-control" type="text" name="nombre" style="font-family: sans-serif; font-size: 20px; width:180px; height:50px; position: relative; margin: 0 auto; display:block">
+<input class="form-control" type="text" name="nombre" style="font-family: sans-serif; font-size: 20px; width:400px; height:50px; position: relative; margin: 0 auto; display:block">
 
 <label style="font-weight:bold; font-family: sans-serif; font-size: 20px;">Foto</label>
-<input class="form-control" type="file" name="imagen" style="font-family: sans-serif; font-size: 20px; width:350px; height:40px; position: relative; margin: 0 auto; display:block" required="">
+<input class="form-control" type="file" name="imagen" style="font-family: sans-serif; font-size: 20px; width:400px; height:40px; position: relative; margin: 0 auto; display:block" required="">
 
 <label style="font-weight:bold; font-family: sans-serif; font-size: 20px;">Correo</label>
-<input class="form-control" type="email" id="correo" name="correo" style="font-family: sans-serif; font-size: 20px; width:300px; height:50px;  position: relative; margin: 0 auto; display:block" >
+<input class="form-control" type="email" id="correo" name="correo" style="font-family: sans-serif; font-size: 20px; width:400px; height:50px;  position: relative; margin: 0 auto; display:block">
 
 <label style="font-weight:bold; font-family: sans-serif; font-size: 20px;">Descripcion</label>
-<input class="form-control" type="text" name="descripcion" style="font-family: sans-serif; font-size: 15px; width:500px; height:50px ;  position: relative; margin: 0 auto; display:block" required="">
+<input class="form-control" type="text" name="descripcion" style="font-family: sans-serif; font-size: 20px; width:500px; height:50px ;  position: relative; margin: 0 auto; display:block" required="">
 
 
 <label style="font-weight:bold; font-family: sans-serif; font-size: 20px;">Region</label>
